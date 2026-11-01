@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#30251d">
+    <meta name="description" content="Uma breve jornada pelo Tabernáculo e pela Menorá da Bíblia.">
+    <title>Tabernáculo &amp; Menorá</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-home="true">
+    <a class="skip-link" href="#conteudo" data-home-copy="skipLink">Pular para o conteúdo</a>
+    <header class="site-header home-header">
+      <a class="brand" href="index.html" aria-label="Tabernáculo e Menorá — início">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span class="brand-name"><span data-home-copy="brandTitle">Tabernáculo</span> <span data-home-copy="brandTagline">&amp; Menorá</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle-label" data-home-copy="menuToggle">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <nav class="site-nav home-nav" aria-label="Páginas do projeto">
+        <a href="pagina-1.html"><span>01</span> <span data-home-copy="navIntro">O Tabernáculo</span></a>
+        <a href="pagina-2.html"><span>02</span> <span data-home-copy="navStructure">As três partes</span></a>
+        <a href="pagina-3.html"><span>03</span> <span data-home-copy="navMenorah">A Menorá</span></a>
+      </nav>
+      <label class="language-picker">
+        <span class="visually-hidden" data-home-copy="languageLabel">Idioma</span>
+        <select class="language-select" aria-label="Idioma">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </label>
+    </header>
+
+    <main id="conteudo" class="home-main">
+      <section class="hero" aria-labelledby="home-title">
+        <div class="hero-copy">
+          <p class="hero-eyebrow"><span class="status-dot"></span><span data-home-copy="eyebrow">Uma história bíblica</span></p>
+          <h1 id="home-title"><span data-home-copy="titleLine1">Tabernáculo</span><br><span class="hero-and" data-home-copy="titleAnd">&amp;</span> <em data-home-copy="titleLine2">Menorá.</em></h1>
+          <p class="hero-description" data-home-copy="description">Um santuário no deserto.<br>Uma luz que guiava o povo.</p>
+          <a class="hero-cta" href="pagina-1.html">
+            <span data-home-copy="cta">Iniciar a jornada</span>
+            <span class="cta-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="hero-footnote"><span data-home-copy="footnote">Uma viagem em três partes</span><span class="footnote-rule"></span><span>01—03</span></div>
+        </div>
+
+        <div class="carousel" aria-label="Imagens do Tabernáculo e da Menorá">
+          <div class="carousel-frame">
+            <figure class="carousel-slide is-active" data-slide="0" aria-hidden="false">
+              <img src="assets/tabernacle.svg" alt="Ilustração de uma tenda sagrada no deserto ao entardecer" data-home-alt="altTabernacle">
+              <figcaption><span>01</span> <span data-home-copy="captionTabernacle">A tenda no deserto</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" data-slide="1" aria-hidden="true" inert>
+              <img src="assets/courtyard.svg" alt="Ilustração do pátio e das divisões do Tabernáculo" data-home-alt="altCourtyard">
+              <figcaption><span>02</span> <span data-home-copy="captionCourtyard">O espaço sagrado</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" data-slide="2" aria-hidden="true" inert>
+              <img src="assets/menorah.svg" alt="Ilustração de uma Menorá dourada com sete braços" data-home-alt="altMenorah">
+              <figcaption><span>03</span> <span data-home-copy="captionMenorah">A luz da Menorá</span></figcaption>
+            </figure>
+            <div class="carousel-controls">
+              <div class="carousel-dots" role="group" aria-label="Escolher imagem">
+                <button class="carousel-dot is-active" type="button" aria-label="Imagem 1 de 3" aria-pressed="true" data-go-to="0"></button>
+                <button class="carousel-dot" type="button" aria-label="Imagem 2 de 3" aria-pressed="false" data-go-to="1"></button>
+                <button class="carousel-dot" type="button" aria-label="Imagem 3 de 3" aria-pressed="false" data-go-to="2"></button>
+              </div>
+              <div class="carousel-arrows">
+                <button class="carousel-arrow" type="button" aria-label="Imagem anterior" data-carousel-prev>←</button>
+                <button class="carousel-arrow" type="button" aria-label="Próxima imagem" data-carousel-next>→</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero-ornament" aria-hidden="true">שָׁלוֹם</div>
+          <p class="carousel-hint" data-home-copy="carouselHint">Um lugar de encontro. Uma luz que permanece.</p>
+        </div>
+      </section>
+
+      <section class="home-chapters" aria-label="Conteúdo do projeto">
+        <a class="chapter-card" href="pagina-1.html">
+          <span class="chapter-index">01 <span>—</span> <span data-home-copy="cardIntro">Origem</span></span>
+          <span class="chapter-name" data-home-copy="navIntro">O Tabernáculo</span>
+          <span class="chapter-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="chapter-card" href="pagina-2.html">
+          <span class="chapter-index">02 <span>—</span> <span data-home-copy="cardStructure">Estrutura</span></span>
+          <span class="chapter-name" data-home-copy="navStructure">As três partes</span>
+          <span class="chapter-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="chapter-card" href="pagina-3.html">
+          <span class="chapter-index">03 <span>—</span> <span data-home-copy="cardMenorah">Símbolo</span></span>
+          <span class="chapter-name" data-home-copy="navMenorah">A Menorá</span>
+          <span class="chapter-arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer home-footer">
+      <span data-home-copy="footerMessage">Uma jornada pela história bíblica.</span>
+      <span>Tabernáculo <span aria-hidden="true">✳</span> Menorá</span>
+    </footer>
+  </body>
+</html>
