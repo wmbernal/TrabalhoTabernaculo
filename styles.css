@@ -1538,6 +1538,15 @@ body[data-page] .reading-progress {
   text-align: center;
 }
 
+.language-selector h1.is-changing {
+  opacity: 0;
+  transform: translateY(0.25em);
+}
+
+.language-selector h1[data-language-title] {
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
 .language-options {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1603,7 +1612,8 @@ body[data-page] .reading-progress {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .language-button {
+  .language-button,
+  .language-selector h1[data-language-title] {
     transition: none;
   }
 }

@@ -1,6 +1,25 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const readingProgress = document.querySelector(".reading-progress");
+const languageTitle = document.querySelector("[data-language-title]");
+
+if (languageTitle && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const languagePrompts = [
+    "Escolha seu idioma",
+    "Choose your language",
+    "Elige tu idioma",
+  ];
+  let promptIndex = 0;
+
+  window.setInterval(() => {
+    languageTitle.classList.add("is-changing");
+    window.setTimeout(() => {
+      promptIndex = (promptIndex + 1) % languagePrompts.length;
+      languageTitle.textContent = languagePrompts[promptIndex];
+      languageTitle.classList.remove("is-changing");
+    }, 240);
+  }, 3200);
+}
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
