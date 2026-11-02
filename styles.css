@@ -405,21 +405,6 @@ blockquote {
   padding: 1.5rem 0;
 }
 
-.aside-number {
-  color: var(--green);
-  font-family: var(--serif);
-  font-size: 3.8rem;
-  letter-spacing: -0.07em;
-}
-
-.aside-number span {
-  margin-left: 0.3rem;
-  color: #a4a69d;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0;
-}
-
 .aside-line {
   width: 35px;
   height: 1px;
@@ -573,15 +558,9 @@ blockquote {
 
   .page-aside {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
-    column-gap: 1rem;
     padding: 0 0.5rem;
-  }
-
-  .aside-number {
-    grid-row: span 3;
-    font-size: 2.6rem;
   }
 
   .aside-line {
@@ -1424,16 +1403,6 @@ body[data-page] .page-aside > :not(.aside-carousel) {
   outline-offset: 3px;
 }
 
-body[data-page] .aside-number {
-  color: #f0d195;
-  font-size: clamp(4rem, 6vw, 5.3rem);
-  text-shadow: 0 2px 18px rgba(25, 18, 12, 0.35);
-}
-
-body[data-page] .aside-number span {
-  color: #e4cfaa;
-}
-
 body[data-page] .aside-line {
   background: #e2bd7c;
 }
@@ -1501,10 +1470,6 @@ body[data-page] .reading-progress {
     align-items: flex-start;
     justify-content: flex-end;
     padding: 1.5rem;
-  }
-
-  body[data-page] .aside-number {
-    font-size: 3.4rem;
   }
 
   body[data-page] .aside-line {

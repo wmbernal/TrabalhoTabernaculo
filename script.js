@@ -51,6 +51,8 @@ if (readingProgress) {
 document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   const slides = Array.from(carousel.querySelectorAll(".aside-slide"));
   const dots = Array.from(carousel.querySelectorAll("[data-carousel-to]"));
+  const captionLabel = carousel.parentElement.querySelector("[data-carousel-caption-label]");
+  const captionCopy = carousel.parentElement.querySelector("[data-carousel-caption-copy]");
 
   if (slides.length === 0 || slides.length !== dots.length) {
     return;
@@ -63,6 +65,8 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
 
   const showSlide = (index) => {
     activeIndex = (index + slides.length) % slides.length;
+    captionLabel.textContent = slides[activeIndex].dataset.captionLabel;
+    captionCopy.textContent = slides[activeIndex].dataset.captionCopy;
     slides.forEach((slide, slideIndex) => {
       const isActive = slideIndex === activeIndex;
       slide.hidden = !isActive;
@@ -85,4 +89,5 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   dots.forEach((dot, index) => {
     dot.addEventListener("click", () => showSlide(index));
   });
+  showSlide(activeIndex);
 });
